@@ -87,6 +87,7 @@ with training:
         cigs_day = sel_col.slider('How many Cigarettes do you smoke per day?', min_value=0, max_value=70, value=0)
     else:
         current_smoker = 0
+        cigs_day = 0
     BP_meds = sel_col.selectbox('Do you take any BP related medications?', options=['Yes', 'No'])
     cholesterol = sel_col.slider('What is your average cholesterol?', min_value=100, max_value=700, value=300, step=25)
     sys_BP = sel_col.slider('What is your Systolic Blood Pressure?', min_value=80, max_value=300, value=100, step=2)
