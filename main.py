@@ -85,7 +85,7 @@ with training:
 
     
 
-    if st.button('Submit', on_click=pred):
+    if st.button('Submit'):
         prediction = model2.predict(feature)
         if prediction == 0:
             answer = "There is no chance of Heart Attack for you within the next 10 years"
